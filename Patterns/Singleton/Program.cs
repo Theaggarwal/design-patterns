@@ -1,6 +1,6 @@
 using System;
 
-// Singleton pattern example: a single Logger instance used across the application.
+// Singleton pattern example: a class has only one instance and provides a global access point to it.
 // Study this folder to see a minimal, thread-safe Singleton implementation.
 
 namespace SingletonPatternDemo
