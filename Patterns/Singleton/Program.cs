@@ -5,9 +5,11 @@ using System;
 
 namespace SingletonPatternDemo
 {
-    class Logger
+    // Make the Logger sealed to prevent inheritance which could break the singleton guarantee.
+    sealed class Logger
     {
-        private static readonly Lazy<Logger> _instance = new(() => new Logger());
+        // Explicitly specify thread-safety mode for clarity: ExecutionAndPublication is fully thread-safe.
+        private static readonly Lazy<Logger> _instance = new(() => new Logger(), System.Threading.LazyThreadSafetyMode.ExecutionAndPublication);
         public static Logger Instance => _instance.Value;
         private Logger() { }
         public void Log(string message) => Console.WriteLine($"[Logger] {DateTime.UtcNow:o} - {message}");
