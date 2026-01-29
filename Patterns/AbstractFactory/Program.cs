@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 
-// Abstract Factory pattern: create families of related objects. Here we create families of repositories and loggers for different environments.
+// Abstract Factory pattern: creational design pattern. states - provides an interface for creating families of related or dependent objects without specifying their concrete classes. 
+// Here we create families of repositories and loggers for different environments.
 
 namespace AbstractFactoryDemo
 {

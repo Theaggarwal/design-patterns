@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-// Factory Method pattern: creators return concrete repositories implementing a common interface.
+// Factory Method pattern: defines an interface for creating objects but lets subclasses decide which object to instantiate
 
 namespace FactoryMethodDemo
 {

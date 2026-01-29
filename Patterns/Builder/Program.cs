@@ -1,6 +1,7 @@
 using System;
 
 // Builder pattern: create complex Student objects step by step using a dedicated builder class.
+// separates the construction process from the object’s representation, enabling the same method to create different variations of an object.
 
 namespace BuilderDemo
 {
